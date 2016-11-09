@@ -35,7 +35,7 @@ function makeNewButton() {
 function topicButtonClick() {
     $(document).on('click', '.topicButton', function () {
         q = $(this).data('search');
-        queryUrl = 'http://api.giphy.com/v1/gifs/search?q=' + q + '&api_key=dc6zaTOxFJmzC&limit=10';
+        queryUrl = 'https://api.giphy.com/v1/gifs/search?q=' + q + '&api_key=dc6zaTOxFJmzC&limit=10';
         $.ajax({
             url: queryUrl,
             method: 'GET'
