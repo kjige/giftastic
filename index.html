@@ -9,22 +9,25 @@
 </head>
 <body>
 	<div class="container">
-
-		<div class="row col-md-12 col-xs-12 buttons">
-			<h2>Buttons</h2>
+		<div class="row col-md-12 col-xs-12 buttonsArea">
+			<div class="col-md-12 col-xs-12">
+				<h2>Buttons</h2>
+				<div class="buttons"></div>
+			</div>
 		</div>
+		<div class="row col-md-12 col-xs-12">
+			<div class="col-md-3 col-xs-12 inputArea">
+				<label for="userInput">
+					<h2>Add new button:</h2>
+				</label><br>
+				<input type="text" class="userInput" placeholder="Example: bird, dog, etc."><br>
+				<button type="button" class="btn submitBtn"><h4>Submit</h4></button>
+			</div>
 
-		<div class="row col-md-9 col-xs-9">
-			<h2>GIFs</h2>
-			<div class="gifs"></div>
-		</div>
-
-		<div class="row col-md-3 col-xs-3">
-			<label for="userInput">
-				<h2>Add new button:</h2>
-			</label>
-			<input type="text" class="userInput" placeholder="Example: bird, dog, etc."><br>
-			<button type="button" class="btn submitButton"><h4>Submit</h4></button>
+			<div class="col-md-9 col-xs-12 gifArea">
+				<h2>GIFs</h2>
+				<div class="gifs"></div>
+			</div>
 		</div>
 	</div>
 	<script src="assets/javascript/app.js"></script>
