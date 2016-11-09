@@ -1,0 +1,21 @@
+.topicButton {
+	margin: 5px;
+	background-color: #5FADFB;
+	min-width: 10%;
+}
+
+.userInput {
+	min-width: 100%;
+	border: 2px solid black;
+}
+
+.submitButton {
+	min-width: 100%;
+	margin: 5px auto;
+	background-color: #5FADFB;
+}
+
+.thumbnail {
+	display: inline;
+	min-height: 10%;
+}
