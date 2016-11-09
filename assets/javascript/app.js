@@ -4,6 +4,7 @@ var queryUrl = "";
 var resp;
 makeButtons();
 topicButtonClick();
+gifButtonClick();
 
 function makeButtons() {
     for (var i = 0; i < topics.length; i++) {
@@ -45,11 +46,20 @@ function displayGifs() {
         });
         $('.gifs').append(g);
     }
-    // resp = "";
 }
 
 function gifButtonClick() {
     $(document).on('click', '.gifBtn', function () {
-        var n = $(this).data('number');
+        var d = $(this).attr('data-type');
+        console.log(d);
+        if (d === 'still') {
+            $(this).attr('src', $(this).data('anim'));
+            $(this).attr('data-type', 'anim');
+            d = '';
+        } else {
+            $(this).attr('src', $(this).data('still'));
+            $(this).attr('data-type', 'still');
+            d = '';
+        }
     });
 }
