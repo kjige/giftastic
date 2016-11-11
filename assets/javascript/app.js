@@ -41,8 +41,6 @@ function topicButtonClick() {
             method: 'GET'
         }).done(function (response) {
             resp = response;
-            console.log(resp);
-            console.log(q);
             displayGifs();
         });
     });
