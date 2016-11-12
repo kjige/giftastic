@@ -1,34 +1,51 @@
-.buttonsArea {
-	/*background-color: #C2FEFE;*/
+body {
+	background: url("../images/village.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.jumbotron {
+	text-align: center;	
+	color: red;
+}
+
+.page-header {
+	color: white;
+}
+
+.buttons {
+	color: white;
 }
 
 .topicButton {
 	margin: 5px;
-	background-color: #5FADFB;
+	color: black;
 	min-width: 10%;
 }
 
-.gifArea {
-	background-color: #F8AF67;
-}
-
 .inputArea {
-	background-color: #C2FEFE;
+	opacity: 0%;
 }
 
 .userInput {
 	min-width: 60%;
 	border: 2px solid black;
-	background-color: orange;
+	background-color: white;
 }
 
 .submitBtn {
 	min-width: 30%;
 	margin: 5px auto;
-	background-color: #5FADFB;
+	color: black;
 }
 
 .thumbnail {
 	display: inline;
 	min-height: 10%;
+}
+
+.label {
+	display: block;
+	color: blue;
 }
