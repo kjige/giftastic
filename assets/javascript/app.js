@@ -9,10 +9,10 @@ gifButtonClick();
 // make buttons from array elements
 function makeButtons() {
     for (var i = 0; i < topics.length; i++) {
-        var b = $('<button class="btn">');
+        var b = $('<button>');
         b.html(topics[i]);
         b.attr({
-            'class': 'btn topicButton topicButton' + i,
+            'class': 'btn btn-warning topicButton',
             'data-search': topics[i]
         });
         $('.buttons').append(b);
@@ -49,14 +49,17 @@ function topicButtonClick() {
 function displayGifs() {
     $('.gifs').empty();
     for (var i = 0; i < 10; i++) {
+        var d = $('<div>').attr('class', 'img-thumbnail');
         var g = $('<img>').attr({
             'src': resp.data[i].images.fixed_height_still.url,
             'data-still': resp.data[i].images.fixed_height_still.url,
             'data-anim': resp.data[i].images.fixed_height.url,
             'data-type': 'still',
-            'class': 'btn gifBtn'
+            'class': 'gifBtn btn-info'
         });
-        $('.gifs').append(g);
+        var h = $('<p>').text('Rating: ' + resp.data[i].rating).attr('class', 'label');
+        d.append(g, h);
+        $('.gifs').append(d);
     }
 }
 // when gif is clicked, switch between static and animated
